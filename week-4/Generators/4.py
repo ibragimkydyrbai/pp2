@@ -1,5 +1,7 @@
+def Z(a,b):
+    for i in range(a,b): 
+        yield i**2
 a=int(input())
 b=int(input())
-for i in range(a,b+1):
-    if i>0:
-        print(i*i, end=" ")
+for x in Z(a,b):
+    print(x, end=" ")

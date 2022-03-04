@@ -1,8 +1,10 @@
-a=int(input())
-for i in range(a+1):
-    if i>0:
-        if i%2==0:
-            if i==a or i==a-1:
-                print(i)
-            else:
-                print(i,end=",")
+def a(N):
+    for i in range(N): 
+        if i%2==0 and i!=0:
+            yield i
+N=int(input())
+for x in a(N+1):
+    if x==N or x==N-1:
+        print(x)
+    else:
+        print(x, end=",")
