@@ -5,7 +5,7 @@ l = [r"Khalid_Billie_Eilish_-_lovely_55441014.mp3",r"ACRAZE_Cherish_-_Do_It_To_I
 
 screen = pygame.display.set_mode((360, 360))
 
-screen2 = pygame.image.load('og__ckjrh2mu8b2a_image.jpg')
+screen2 = pygame.image.load('og_image.jpg')
 
 run = True
 pos = 0
@@ -19,9 +19,9 @@ while run:
             pygame.mixer.music.load(l[pos])
             pygame.mixer.music.play()
         
-        if event.type == pygame.KEYDOWN and event.key == pygame.K_p:
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_z:
             pygame.mixer.music.pause()
-        if event.type == pygame.KEYDOWN and event.key == pygame.K_f:
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_c:
             pygame.mixer.music.unpause()
         if event.type == pygame.KEYDOWN and event.key == pygame.K_RIGHT:
             if pos <= 2:
